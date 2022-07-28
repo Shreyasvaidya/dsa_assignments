@@ -1,4 +1,3 @@
-
 #define len 21
 #include<stdio.h>
 #include<stdlib.h>
@@ -53,14 +52,13 @@ int main(void){
 
 		}
 	}
-	print(pile_array);
+	print(array_with_columns);
 	//step 2 first time
 	int index = find_index(array_with_columns,chosen);
 	if (index >= 0 && index <= 6){
 		int first_row_from = (random_from_range(1,2) == 1)?(7):(14);
 		int third_row_from  = (first_row_from == 7)?(14):(7);
-		printf("%d\n",first_row_from);
-		printf("%d\n",third_row_from);
+		
 		for(int i =0;i<7;i++){
 			pile_array[i] = array_with_columns[first_row_from+i];
 		}	
@@ -116,7 +114,7 @@ int main(void){
 
 		}
 	}
-	print(pile_array);
+	print(array_with_columns);
 	//step2 second
 	index = find_index(array_with_columns,chosen);
 	if (index >= 0 && index <= 6){
@@ -177,7 +175,7 @@ int main(void){
 
 		}
 	}
-	print(pile_array);
+	print(array_with_columns);
 	//step2 last
 	index = find_index(array_with_columns,chosen);
 	if (index >= 0 && index <= 6){
@@ -225,4 +223,3 @@ int main(void){
 	
 	return 0;
 }
-
