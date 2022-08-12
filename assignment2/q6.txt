@@ -1,0 +1,111 @@
+In Monster world, there are n fighting-monsters labeled from 1 to n. The ith fighting-monster has a strength of si. In a fight between two fighting-monsters i and j: 
+
+monster i can defeat a monster j if and only if si > sj.
+ If the strength of the two is equal, the fight ends in a draw.
+ 
+
+A tournament is being conducted in the monster world. In the tournament, all the n  fighting-monsters will be standing next to each, in the sequence of their labeling initially. 
+
+ 
+
+The king of the monster world will then select a monster according to his will, who will start a fight with one of the monsters next to him .
+
+ 
+
+ If the chosen monster is successful in defeating the monster he chose to fight against, the defeated monster will now be taken to the hospital. The chosen monster will continue the process until he cannot defeat any other monster anymore. See the examples below for a clearer understanding.
+
+ 
+
+The king wants to know that if he chooses ith monster, how many fights will the viewers get to see, for all i from 1 to n.
+
+ 
+
+NOTE: A draw is not considered as a defeat.
+
+ 
+
+Example 1
+
+ 
+
+Consider the following example where  n = 6 , s = [100,150,300,299,450].
+
+ 
+
+Labelling of the monsters :    1     2    3     4     5     6
+
+Strengths of the monsters : 100 150 300 178 299 450
+
+ 
+
+Suppose the king chooses the 3rd  monster to fight.
+
+ 
+
+This monster can now choose to fight against the 2nd  or the 4th monster. Suppose he picks the 4th monster. Since s3>s4 , the 3rd monster will be able to defeat the 4th monster and the 4th monster will be taken to the hospital. The monster sequence now looks like:
+
+ 
+
+Labelling of the monsters :    1     2     3      5     6
+
+Strengths of the monsters : 100 150 300  299 450
+
+ 
+
+Now the 3rd monster again has a choice between the  2nd  and the 5th monster .Suppose he picks the 2nd monster. Since s3>s2 , the 3rd monster will be able to defeat the 2nd monster and the 2nd monster will be taken to the hospital. The monster sequence now looks like:
+
+ 
+
+Labelling of the monsters :    1      3      5     6
+
+Strengths of the monsters : 100  300  299 450
+
+ 
+
+This process will now continue in a similar fashion, until the only monsters left are the 3rd and the 4th . In this situation, the 3rd monster will not be able to defeat anyone. Hence, if the king chooses the 3rd monster, the viewers will get to see 4 fights.
+
+ 
+
+The final answer for each of the monsters is as follows:
+If the king chose the 1st monster, the viewers will get to see 0 fights.
+
+If the king chose the 2nd monster, the viewers will get to see 1 fight.
+
+If the king chose the 3rd monster, the viewers will get to see 4 fights.
+
+If the king chose the 4th monster, the viewers will get to see 0 fights.
+
+If the king chose the 5th monster, the viewers will get to see 1 fight
+
+If the king chose the 6th monster, the viewers will get to see 5 fights.
+
+ 
+
+Input Format:
+
+ 
+
+The first line of the input will be a single integer n,  the number of fighting-monsters in the monster world.
+
+The next line contains n space separated integers s1, s2,..... sn  ,where si is the strength of the monster labeled i. 
+
+Constraints
+
+1<=n<=1e5
+
+1<=si<=1e6
+
+Output Format:
+
+ 
+
+Output a single line of space separated integers, the ith of which is the number of fights the viewers will get to see if the ith monster is chosen by the team.
+
+ 
+
+NOTE: Your code should have an O(n) time complexity.
+
+ 
+
+ 
+
