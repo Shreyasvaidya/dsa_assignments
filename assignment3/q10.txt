@@ -1,0 +1,22 @@
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+-> push(x) – Push element x onto stack.
+
+-> pop() – Removes the element on top of the stack.
+
+-> top() – Get the top element.
+
+-> getmin() – Retrieve the minimum element in the stack.
+
+Note that all the operations have to be constant time operations.
+
+ 
+
+In case of getmin() when stack is empty, return -1. In case of pop() when stack is empty, do nothing. In case of top() when stack is empty, return -1.
+
+ 
+
+Input format : first line is the integer, the number of queries to be processed. Next Q lines contains first word as the operation to be performed and when the operation to be performed is a push, and additional integer x to be pushed into the stack is given.
+
+Output format :  print your answer on different lines.
+
