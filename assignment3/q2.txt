@@ -1,0 +1,57 @@
+Alice is in a fair, in which there are n desserts lined up in front of her, the sweetness value of each dessert is given to you .
+
+Her mother has allowed her to eat at max k desserts.
+
+Since Alice has a sweet tooth, she wants to have all the k desserts she has the permission for.
+
+The sweet shop owner allows her to eat the desserts either from the front of the line, or from the back of the line.
+
+What is the maximum amount of sweetness Alice can have, abiding by the above rules of the shopkeeper. It is given to you that the sweetness value is additive in nature, that is, if Alice has a dessert of sweetness x, and then she has a dessert of sweetness value y, she has had a total sweetness value of x+y.
+
+ 
+
+Examples
+
+ 
+
+Suppose n = 6  and  k = 2. 
+
+Suppose the sweets have a sweetness values are given to you as: 4 2 3 1 7 2
+
+In this case Alice will prefer to have the last two chocolates, as they will cumulatively give her a sweetness value of 9. Hence the answer for this example is 9.
+
+ 
+
+Suppose n = 6  and  k = 2. 
+
+Suppose the sweets have a sweetness values are given to you as: 8 1 3 1 7 1
+
+In this case Alice will prefer to have the first and last chocolates, as they will cumulatively give har a sweetness value of 9. Hence the answer for this example is 9.
+
+ 
+
+NOTE: Alice could have also eaten the fist two chocolates. The answer would have been 9 regardless.
+
+
+
+
+Input Format
+
+ 
+
+The first line of the input will be a two integer n and k, the number of desserts place in front of Alice, and the number of desserts she has the permission to eat.
+
+ 
+
+The next line contains n space separated integers s1, s2,..... sn  ,where si is the the sweetness value  of the ith sweet from left placed in front of her by the shopkeeper.
+
+ 
+
+Output Format:
+
+
+Output a single integer, the maximum sweetness value  that Alice can achieve cumulatively.
+
+ 
+
+NOTE: Yout algorithm should run in O(n) time.
