@@ -1,0 +1,19 @@
+Using stack, write a program to convert a given Postfix expression to Infix expression. 
+
+The following operators are allowed in the input:
+    (i) +, –, *, / (with + and – having the same level of precedence, which is lower than that of * and /)
+    (ii) ^ (unary squaring operator, having higher precedence than +, -, *, /). Example: 3^ evaluates to 9.
+    (iii) To avoid ambiguity in infix expressions, we will extensively use parentheses ( ). Each operation in the Infix expression should be contained within ( ).
+
+You can assume that the input length is no more than 100 characters. For wrong input, you should print an error message.
+
+Example 
+Case 1:
+4,ˆ,5,*,6,-
+Output:
+(((4ˆ)*5)-6)
+
+Case 2:
+25,9,6,*,-,/,3
+Output:
+((25-(9*6))/3)
